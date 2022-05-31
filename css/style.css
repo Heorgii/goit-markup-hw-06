@@ -162,7 +162,7 @@ ul{
 }
 
 
-/* ⁡⁣⁢⁣ℍ𝕖𝕒𝕕𝕖𝕣⁡ contact icon */
+/* ⁡⁣⁢⁣𝗛𝗲𝗮𝗱𝗲𝗿⁡ contact icon */
 
 .icon-link{
     fill: currentColor;
@@ -172,7 +172,7 @@ ul{
     margin-right: 10px;
 }
 
-/* ⁡⁣⁣⁢𝗛𝗲𝗿𝗼⁡ */
+/* ⁡⁢⁣⁣𝗛𝗲𝗿𝗼⁡ */
 
 .hero{
     height: 600px;
@@ -256,13 +256,13 @@ h1{
     top: 50%;
     left: 50%;
     /* transform: translate(-50%, -50%); */
+    padding: 40px;
     width: 528px;
-    height: 581px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
-    transition: transform 250ms ease-in-out 200ms, opacity 250ms ease-in-out 200ms;
+    transition: transform 250ms ease-in-out 250ms, opacity 250ms ease-in-out 250ms;
  
 }
 
@@ -304,13 +304,142 @@ h1{
     pointer-events: none;
 }
 
-/* ⁡⁢⁣⁣𝕀𝕟𝕗𝕠𝕣𝕞𝕒𝕥𝕚𝕠𝕟⁡ модалки */
+/* ⁡⁣⁣⁢𝗠𝗼𝗱𝗮𝗹⁡ form */
 
-.modal-info{
-    display: flex;
+/* .modal-info{
+  
+} */
+
+.modal-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+
+    margin-bottom: 12px;
 }
 
-/* ⁡⁣⁣⁢𝗗𝗶𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻⁡ */
+.modal-group{
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.modal-icon{
+    position: absolute;
+    top: 29px;
+    left: 5px;
+}
+
+.modal-area{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.modal-input{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+
+    padding: 0 25px;
+}
+
+.textarea-modal{
+    width: 100%;
+    height: 120px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal-policy-group{
+    display: block;
+    margin-bottom: 30xp;
+}
+
+.modal-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+
+.modal-policy-submit{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.modal-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    
+    color: #2196F3;
+}
+
+.btn-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2196F3;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+
+    transition: 250ms ease;
+}
+
+.btn-modal:hover, .btn-modal:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
+}
+
+/* ⁡⁢⁣⁢𝔻𝕚𝕤𝕔𝕣𝕚𝕡𝕥𝕚𝕠𝕟⁡ */
 
 
 .discription{
@@ -345,7 +474,7 @@ h1{
     color: #757575;  
 }
 
-/* ⁡⁣⁣⁢𝗗𝗶𝘀𝗰𝗿⁡ icons */
+/* ⁡⁢⁣⁢𝗗𝗶𝘀𝗰𝗿⁡ icons */
 
 .icon-box{
     height: 120px;
@@ -358,7 +487,7 @@ h1{
     border-radius: 4px;
 }
 
-/* ⁡⁣⁣⁢𝗜𝗺𝗮𝗴𝗲⁡ */
+/* ⁡⁣⁢⁢𝗜𝗺𝗮𝗴𝗲⁡ */
 
 .img-sect{
     padding-top: 0;
@@ -404,7 +533,8 @@ h1{
     
     color: #ffffff;
 }
-/*  ⁡⁣⁣⁢𝗧𝗲𝗮𝗺⁡  */
+
+/*  ⁡⁢⁢⁣𝕋𝕖𝕒𝕞⁡  */
 
 .team{
     background: #F5F4FA;
@@ -432,7 +562,7 @@ h1{
     color: #757575;
 }
 
-h2{
+.h2-item{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -469,7 +599,7 @@ h2{
     margin-bottom: 16px; 
 }
 
-/* ⁡⁣⁣⁢𝗦𝗼𝗰𝗶𝗮𝗹⁡ icons */
+/* ⁡⁢⁢⁣𝗦𝗼𝗰𝗶𝗮𝗹⁡ icons */
 
 
 .socials{
@@ -657,4 +787,65 @@ h2{
 
 .footer-social-icon{
     fill: #FFFFFF;
+}
+
+/* ⁡⁣⁢⁣𝗙𝗼𝗼𝘁𝗲𝗿⁡ підписка */
+
+.subscribe-newsletter{
+    margin-left: 94px;
+}
+
+.footer-h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.btn-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
+}
+
+.btn-submit{
+    background: #2196F3;
+    border-color: transparent;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;  
+    cursor: pointer;
+
+    transition: 250ms ease;
+}
+
+.btn-submit:hover, .btn-submit:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-footer-subscribe{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color:transparent;
+    color: #FFFFFF;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
 }

@@ -492,3 +492,64 @@ p{
 .footer-social-icon{
      fill: #FFFFFF;
 }
+
+/* ⁡⁣⁢⁣𝗙𝗼𝗼𝘁𝗲𝗿⁡ підписка */
+
+.subscribe-newsletter{
+    margin-left: 94px;
+}
+
+.footer-h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.btn-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    
+    color: #FFFFFF;
+}
+
+.btn-submit{
+    background: #2196F3;
+    border-color: transparent;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;  
+    cursor: pointer;
+
+    transition: 250ms ease;
+}
+
+.btn-submit:hover, .btn-submit:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-footer-subscribe{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color:transparent;
+    color: #FFFFFF;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+}
