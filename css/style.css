@@ -306,9 +306,6 @@ h1{
 
 /* ⁡⁣⁣⁢𝗠𝗼𝗱𝗮𝗹⁡ form */
 
-/* .modal-info{
-  
-} */
 
 .modal-title{
     font-family: 'Roboto';
@@ -366,6 +363,8 @@ h1{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+
+/* ⁡⁣⁣⁢Політика⁡ модалки */
 
 .modal-policy-group{
     display: block;
@@ -437,6 +436,45 @@ h1{
     letter-spacing: 0.06em;
     
     color: #FFFFFF;
+}
+
+/* ⁡⁣⁣⁢𝗖𝗵𝗲𝗰𝗸𝗯𝗼𝘅⁡ modal */
+
+.modal-policy-group{
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2px;
+    outline: 2px solid black;
+    outline-offset: -2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 250ms ease-in;
+}
+
+.checkbox:checked +.custom-checkbox:hover, 
+.checkbox:checked +.custom-checkbox:focus{
+    background-color: #2196F3;
+    border-radius: 2px;
+}
+
+.custom-checkbox-icon{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.checkbox:checked +.custom-checkbox 
+.custom-checkbox-icon{
+    opacity: 1;
 }
 
 /* ⁡⁢⁣⁢𝔻𝕚𝕤𝕔𝕣𝕚𝕡𝕥𝕚𝕠𝕟⁡ */
