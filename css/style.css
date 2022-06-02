@@ -891,6 +891,12 @@ h1{
     margin-left: 94px;
 }
 
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .subscribe-h2{
     font-family: 'Roboto';
     font-style: normal;
