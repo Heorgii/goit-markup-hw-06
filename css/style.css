@@ -1,3 +1,21 @@
+:root {
+    --primary-text-color: #757575;
+    --second-text-color: #ffffff;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --button-accent-color: #188ce8;
+    --background-hero-color: #c4c4c4;
+    --background-grey-color: #2f303a;
+    --background-light-color: #f5f4fa;
+    --logo-black-color: #000000;
+    --background-portfolio: #eeeeee;
+    --footer-address-color: rgba(255, 255, 255, 0.6);
+    --svg-color: #afb1b8;
+    --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+
 body{
     font-family:  'Roboto', sans-serif;
     font-family: 'Roboto';
@@ -263,6 +281,9 @@ h1{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-wrapper{
@@ -275,7 +296,9 @@ h1{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
-    transition: transform 250ms ease-in-out 250ms opacity 250ms ease-in-out 250ms;
+    transform: translate(-50%, -50%) scale(1);
+	opacity: 1;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 
@@ -494,50 +517,49 @@ h1{
 }
 
 /* ⁡⁣⁣⁢𝗖𝗵𝗲𝗰𝗸𝗯𝗼𝘅⁡ modal */
-
-.modal-policy-group{
+  
+.check-agree {
+    position: relative;
     display: flex;
-    align-items: center;
-}
-
-.custom-checkbox{
-    width: 16px;
-    height: 15px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-    border-radius: 2px;
-    outline: 2px solid #212121;
-    outline-offset: -2px;
-
-    transition: background-color 250ms ease-in;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    color: var(--primary-text-color);
     cursor: pointer;
 }
 
+.checkbox-icon {
+    display: flex;
+    margin-right: 8px;
 
-.checkbox:checked + .custom-checkbox:hover, 
-.checkbox:checked + .custom-checkbox:focus{
-    background-color: #2196F3;
+    justify-content: center;
+    text-align: center;
+
+    fill: white;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
     border-radius: 2px;
-    outline: 2px solid #2196F3;
-    outline-offset: -2px
+    
+    transition: background-color 250ms ease-in;
 }
 
-.custom-checkbox-icon{
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-    background-color: #2196F3;
-    fill: #FFFFFF;
+.hidden-check:checked ~ .checkbox-icon {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
-.checkbox:checked +.custom-checkbox 
-.custom-checkbox-icon{
-    opacity: 1;
-    border: 1px solid #2196f3;
+.hidden-check {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
 }
+  
 
 /* ⁡⁢⁣⁢𝔻𝕚𝕤𝕔𝕣𝕚𝕡𝕥𝕚𝕠𝕟⁡ */
 
